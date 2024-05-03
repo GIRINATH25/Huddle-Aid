@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nunito;
+    font-weight: 600;
+}
+h1{
+    padding-left: 4%;
+    padding-top: 1%;
+    display: flex;
+    font-family: Alkatra;
+}
+body{
+    background: url(bg.png);
+   
+   background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+.wrapper{
+    position: absolute;
+    width: 455px;
+    height: 485px;
+    border-radius: 30px;
+    transform: rotate(5deg);
+    background: rgba(255, 255, 255, 0.53);
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.115),
+                -2px -0px 15px 2px rgba(0, 0, 0, 0.054);
+}
+.box{
+    width: 450px;
+    height: 480px;
+    background: #fff;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.1),
+                -2px -0px 15px 2px rgba(0,0,0,0.1);
+    z-index: 10;           
+}
+.header{
+    margin-bottom: 40px;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.header header{
+    display: flex;
+    justify-content: right;
+}
+header img{
+    width: 25px;
+}
+.header p{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    position: relative;
+}
+i{
+    font-size: 22px;
+    position: absolute;
+    top: 35px;
+    right: 12px;
+    color: #595b5e;
+}
+input{
+    height: 40px;
+    border: 2px solid rgb(153, 157, 158);
+    border-radius: 7px;
+    margin: 5px 0;
+    outline: none;
+}
+.input-field{
+    font-weight: 500;
+    padding: 0 10px;
+    font-size: 17px;
+    color: #333;
+    background: transparent;
+    transition: all .3s ease-in-out;
+}
+.input-field:focus{
+    border: 2px solid rgb(89, 53, 180);
+}
+.input-field:focus ~ i{
+    color: rgb(89, 53, 180);
+}
+.input-submit{
+    background: #1e263a;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.input-submit:hover{
+    background: #122b71;
+}
+.forgot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.forgot span{
+    color: #727374;
+    cursor: pointer;
+    display: flex;
+}
+.forgot span:hover{
+    text-decoration: underline;
+}
+.message{
+    color: rgb(205, 43, 43);
+    padding-bottom:3%;
+}
+.box1{
+    width: 1380px;
+    height: 640px;
+    background: #fff;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.1),
+                -2px -0px 15px 2px rgba(0,0,0,0.1);
+    z-index: 10;   
+
+}
+.c-m{
+    background: #1e263a;
+    color: #fff;
+    text-decoration-line: none;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    height: 25%;
+    width: 50%;
+}
+.c-m:hover{
+    background: #122b71;
+}
+.input-box1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    position: relative;
+}
+.vid1{
+    display: inline-block;
+  width: 100%;
+  padding: 120px 0 0 0;
+  height: 00px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #e4e4e4;
+  border-radius: 20px;
+  background-size: 60px 60px;
+}
+.box2{
+    width: 800px;
+    height: 515px;
+    background: #fff;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.1),
+                -2px -0px 15px 2px rgba(0,0,0,0.1);
+    z-index: 10;  
+}
+.next{
+    text-decoration-line: none;
+    background: #1e263a;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    padding: 15px;
+    border-radius: 15%;
+}
+.next:hover{
+    background: #122b71;
+}
+video{
+    padding-bottom: 30px;
+}

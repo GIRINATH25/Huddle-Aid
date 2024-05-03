@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+
+{% block tittle %}
+    Register
+{% endblock %}
+
+{% block form %}
+<div class="container">
+        
+    <div class="box">
+        <div class="header">
+            <p>Register</p>
+        </div>
+        <form method="POST">
+        <div class="input-box">
+            <label for="name">Username</label>
+            <input type="text" name="name" class="input-field" id="email" required>
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" class="input-field" id="email" required>
+            <i class="bx bx-envelope"></i>
+        </div>
+        <div class="input-box">
+            <label for="pass">Password</label>
+            <input type="password" name="password" class="input-field" id="pass" required>
+            <i class="bx bx-lock-alt"></i>
+        </div>
+        <div class="input-box">
+            <input type="submit" class="input-submit" value=" Register ">
+        </div>
+        </form>
+        <div class="forgot">
+            <span>Have an account? <a href="login.html">login</a></span>
+        </div>
+    </div>
+    <div class="wrapper"></div>
+  </div>
+{% endblock %}

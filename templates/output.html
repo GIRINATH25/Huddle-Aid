@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block tittle %}
+    output
+{% endblock %}
+
+{% block form %}
+<div class="container">
+        
+    <div class="box"><form action="{{url_for('cut')}}" method="POST">
+        <div class="input-box">
+            <label for="Strat word">Strat word</label>
+            <input type="text" name="start" class="input-field" required>
+        </div>
+        <div class="input-box">
+            <label for="End word">End word</label>
+            <input type="text" name="end" class="input-field" required>
+        </div>
+        <div class="input-box">
+            <input type="submit" class="input-submit" value=" submit ">
+        </div>
+    </form>
+       
+    </div>
+    <div class="wrapper"></div>
+  </div>
+{% endblock %}
+<video width="1300px" height="450px" controls>
+    <source src="{{url_for('static', filename='videos/' + video_name)}}" type="video/mp4">
+</video>
