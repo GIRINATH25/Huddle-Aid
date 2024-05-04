@@ -80,34 +80,28 @@ def output():
 @app.route('/cut.html', methods=['POST'])
 def cut():
     try:
-        # Load the video
+
         video = mp.VideoFileClip("static/videos/input.mp4")
 
-        # Extract the audio from the video
         audio = video.audio
         audio.write_audiofile("audio.wav")
 
-        # Recognize the speech in the audio
         recognizer = sr.Recognizer()
         with sr.AudioFile("audio.wav") as source:
             audio = recognizer.record(source)
             transcript = recognizer.recognize_google(audio)
 
-        # Get the start and end words from the user
         start = request.form['start']
         end = request.form['end']
 
-        # Check if transcript is available
         if transcript:
             start_time = transcript.find(start) / len(transcript) * video.duration
             end_time = transcript.find(end) / len(transcript) * video.duration
         else:
             return "Transcript not available"
 
-        # Cut the video
         cut_video = video.subclip(start_time, end_time)
 
-        # Save the cut video
         cut_video.write_videofile("output.mp4")
 
         return render_template('cut.html')
